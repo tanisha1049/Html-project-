@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <h1>
+    PHYSICS INTRODUCTION
+    
+    
+    </h1>
+    <body>
+       
+    </body>
+    <style>
+    
+        #countdown {
+            font-size: 24px;
+        }
+    
+        h1{ font-size: 50px;
+        text-align: center;
+    border-width: 2px;
+     border-style: groove;
+    border: radius 30px;
+    padding: 30px;
+    border-color: darkkhaki;
+    font-style:normal;}
+    p{ text-align: center;
+        margin-block-start: 35px;
+        flex-wrap: wrap;
+        flex-direction: 
+
+        
+    
+
+
+}
+caption{ font-weight: bolder;
+padding-top: 30px;}
+.p2{ text-align: center;
+font-size: medium;}
+
+
+    
+    
+
+    
+
+
+    </style>
+    <body style="background-color:skyblue;">
+        <div id="countdown">Countdown: 00:00:60</div>
+
+<script>
+    // Set the date and time for the countdown
+    var countdownDate = new Date();
+    countdownDate.setSeconds(countdownDate.getSeconds()+60); // 10 hours from now
+
+    // Update the countdown every second
+    var countdown = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
+
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        var countdownText = "Countdown: " + hours + ":" + minutes + ":" + seconds;
+        document.getElementById("countdown").innerHTML = countdownText;
+
+        // When the countdown is over, you can perform an action here
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "Countdown expired!";
+        }
+    }, 1000);
+</script>
+
+        <p >
+            *Take this quiz to know more about physics. Score a perfect and tell everyone that you know everything about physics.<br>
+           * Basically this quiz is based on unit 1st Electrodynamics.<br>
+            *All the questions are multiple choice type.<br>
+            *As you better know there are total 3 questions and 3 students in this quiz contest.<br>
+           * Each learner will get 60 percious second to answer the question.<br>
+            *At last winner will get surprising prize.<br>
+
+
+
+         
+
+            
+
+
+
+
+        </p> 
+       
+        
+        
+          <p2>
+            <b>1. The force between two charges is 120 N. If the distance between the charges is doubled,
+the force will be.</b><br><br>
+<input type="checkbox" value="60N" name="aa"> 60 N
+<input type="checkbox" value="60N" name="aa"> 30 N
+<input type="checkbox" value="60N" name="aa"> 40 N
+<input type="checkbox" value="60N" name="aa"> 15 N
+<p></p>
+<b>2. The electric field intensity at a point situated 4 metres from a point charge is 200 N/C. If
+the distance is reduced to 2 metres, the field intensity will be.</b><br><br>
+
+<input type="checkbox" value="400N" name="AA" >400 N/C
+<input type="checkbox" value="600N" name="aa"> 600 N/C
+<input type="checkbox" value="800N" name="aa"> 800 N/C
+<input type="checkbox" value="1200N" name="aa"> 1200 N/C
+          </p2>
+          <br><br>
+          <b>3.EMF is an abbreviation of.</b><br><br>
+          <input type="checkbox" value="Electromotive force" name="aa"> Electromotive force
+          <input type="checkbox" value="Electrical motive force" name="aa">  Electrical motive force
+        
+          <input type="checkbox" value="Electronic motive force" name="aa"> Electronic motive force
+          <input type="checkbox" value="Both a and b " name="aa"> Both a and b     
+            
+    <body>
+            <div class="form-container">
+                
+            </div>
+            </body>
+
+         
+        
+        
+    </body>
+    <head>
+        <center>
+            <a class="button" href="./submit.html">SUMBIT</a>
+                      </center>
+           
+        
+        
+        
+    </head>
+</html>
